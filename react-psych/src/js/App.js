@@ -149,7 +149,8 @@ const Sciencequestions = [
 // 
 // 
 const Historyquestions = [
-  { questionText: 'What is the smallest country in the world?', 
+  { 
+    questionText: 'What is the smallest country in the world?', 
     answerOptions:[
       {answerText: '', isCorrect: false},
       {answerText: '', isCorrect: false},
@@ -288,15 +289,299 @@ const Historyquestions = [
       {answerText: '', isCorrect: false},
       {answerText: '', isCorrect: false},
       {answerText: '1945', isCorrect: true}
-    ],
+    ]
   }
 ]
-
 // 
 // 
-
-// const Languagequestions = [{questionText: '', answerOptions:[]}]
-// const Culturequestions = [{questionText: '', answerOptions:[]}]
+const Languagequestions = [
+  {
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ]
+  }
+]
+const Culturequestions = [
+  {
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ],
+    questionText: 'In which year did Hitler commit suicide?', 
+    answerOptions:[
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false},
+      {answerText: '', isCorrect: false}
+    ]
+  }
+]
 }
 
 export default App;
