@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './App.css';
 import App from './App.js';
-// import Start from './Start';
-// import Category from './Category'
+import Start from './Start';
+import Category from './Category'
 
 import reportWebVitals from './reportWebVitals';
 

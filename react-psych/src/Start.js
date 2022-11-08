@@ -4,10 +4,11 @@ import './App.css';
 
 export default function Start(){
 
-    function Button (button){
-        return 
-        <button id='start-game-button' class="start-button" onClick={Button()}> Start Game </button>
-    }
+    // function HandleClick (button){
+    
+    // }
+    // return <button id='start-game-button' class="start-button" onClick={HandleClick()}> Start Game </button>
+
 
     // window.onload = function() {
     // } 
