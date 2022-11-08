@@ -14,63 +14,63 @@ export default function App() {
     {
       questionText: 'How many teeth does an adult human have?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
+        { answerText: '55', isCorrect: false },
+        { answerText: '6', isCorrect: false },
         { answerText: '32', isCorrect: true },
-        { answerText: '', isCorrect: false }
+        { answerText: '26', isCorrect: false }
       ]
     },
     {
       questionText: 'What is the rarest blood type?',
       answerOptions: [
         { answerText: 'AB Negative', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'A Positive', isCorrect: false },
+        { answerText: 'O Negative', isCorrect: false },
+        { answerText: 'AB Positive', isCorrect: false }
       ]
     },
     {
       questionText: 'Diabetes develops as the result of a problem with which specific organ in the body?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
+        { answerText: 'Spleen', isCorrect: false },
+        { answerText: 'Lower Intenstines', isCorrect: false },
+        { answerText: 'Gallbladder', isCorrect: false },
         { answerText: 'Pancreas', isCorrect: true }
       ]
     },
     {
       questionText: 'How many elements are there in the periodic table?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
+        { answerText: '600+', isCorrect: false },
+        { answerText: '89', isCorrect: false },
         { answerText: '118', isCorrect: true },
-        { answerText: '', isCorrect: false }
+        { answerText: '55', isCorrect: false }
       ]
     },
     {
       questionText: 'The oldest living tree is 4,843 years old and can be found where?',
       answerOptions: [
         { answerText: 'California', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'Japan', isCorrect: false },
+        { answerText: 'Sweden', isCorrect: false },
+        { answerText: 'Alaska', isCorrect: false }
       ]
     },
     {
       questionText: 'How long does a human red blood cell survive?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
+        { answerText: 'Forever', isCorrect: false },
         { answerText: '120 days', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: '14 days', isCorrect: false },
+        { answerText: 'Half a day', isCorrect: false }
       ]
     },
     {
       questionText: 'What is the tallest type of grass?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
+        { answerText: 'Lawn grass', isCorrect: false },
+        { answerText: 'Corn', isCorrect: false },
+        { answerText: 'Wheat porridge', isCorrect: false },
         { answerText: 'Bamboo', isCorrect: true }
       ]
     },
@@ -78,71 +78,71 @@ export default function App() {
       questionText: 'What type of animal was Laika, the first animal to orbit the Earth?',
       answerOptions: [
         { answerText: 'Dog', isCorrect: true },
-        { answerText: '', isCorrect: false },
         { answerText: 'Monkey', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'Fish', isCorrect: false },
+        { answerText: 'Donkey', isCorrect: false }
       ]
     },
     {
       questionText: 'What is the hardest known natural material?',
       answerOptions: [
         { answerText: 'Netherite', isCorrect: false },
-        { answerText: '', isCorrect: false },
+        { answerText: 'Fiber', isCorrect: false },
         { answerText: 'Diamond', isCorrect: true },
-        { answerText: '', isCorrect: false }
+        { answerText: 'Marble', isCorrect: false }
       ]
     },
     {
       questionText: 'Dolly was the first ever living creature to be cloned. What type of animal was she?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
+        { answerText: 'Dog', isCorrect: false },
+        { answerText: 'Catfish', isCorrect: false },
         { answerText: 'Sheep', isCorrect: true },
-        { answerText: '', isCorrect: false }
+        { answerText: 'Gorilla', isCorrect: false }
       ]
     },
     {
       questionText: 'How many bones do sharks have in total?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
+        { answerText: 'One', isCorrect: false },
         { answerText: 'Zero', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'Six', isCorrect: false },
+        { answerText: 'Fifty', isCorrect: false }
       ]
     },
     {
       questionText: 'Discovered by Alexander Fleming, this is now used to treat infections and is considered one of the most important discoveries in the field of medical science. What is it?',
       answerOptions: [
         { answerText: 'Stomach acid', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
+        { answerText: 'Oxycotin', isCorrect: false },
+        { answerText: 'Alcohol', isCorrect: false },
         { answerText: 'Penicillin', isCorrect: true }
       ]
     },
     {
       questionText: 'What is a geiger counter used to measure?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
+        { answerText: 'Sonic Waves', isCorrect: false },
         { answerText: 'Radiation', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'Light', isCorrect: false },
+        { answerText: 'Magnetic Pull', isCorrect: false }
       ]
     },
     {
       questionText: 'From what tree do acorns come from?',
       answerOptions: [
-        { answerText: 'Oak trees', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'Oak Trees', isCorrect: true },
+        { answerText: 'Spruce Trees', isCorrect: false },
+        { answerText: 'Coconut Trees', isCorrect: false },
+        { answerText: 'Papaya Trees', isCorrect: false }
       ]
     },
     {
       questionText: 'This theory aims to explain how Pangea became separate continents, suggesting that the movement of tectonic plates caused the mass to break off and drift into different places.',
       answerOptions: [
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
+        { answerText: 'The Theory of Relativity', isCorrect: false },
+        { answerText: 'The Quantum Field Theory', isCorrect: false },
+        { answerText: 'The Big Bang Theory', isCorrect: false },
         { answerText: 'The Continental Drift Theory', isCorrect: true }
       ]
     },
@@ -150,18 +150,18 @@ export default function App() {
       questionText: 'Where can you find the smallest bone in the human body?',
       answerOptions: [
         { answerText: 'Middle ear', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'Thigh', isCorrect: false },
+        { answerText: 'Pelvis', isCorrect: false },
+        { answerText: 'Mouth', isCorrect: false }
       ]
     },
     {
       questionText: 'This planet spins the fastest, completing one whole rotation in just 10 hours. Which planet is it?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
+        { answerText: 'Mars', isCorrect: false },
         { answerText: 'Jupiter', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'Pluto', isCorrect: false },
+        { answerText: 'Earth', isCorrect: false }
       ]
     },
     {
@@ -174,19 +174,18 @@ export default function App() {
     {
       questionText: 'Which of Newton’s Laws state that ‘for every action, there is an equal and opposite reaction?’',
       answerOptions: [
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
+        { answerText: 'The first law of inertia', isCorrect: false },
+        { answerText: 'The second law of force', isCorrect: false },
         { answerText: 'The third law of motion', isCorrect: true },
-        { answerText: '', isCorrect: false }
       ]
     },
     {
       questionText: 'Animals that eat both plants and meat are called what?',
       answerOptions: [
         { answerText: 'Omnivores', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'Herbivores', isCorrect: false },
+        { answerText: 'Carnivores', isCorrect: false },
+        { answerText: 'Pescetarians', isCorrect: false }
       ]
     }
   ]
@@ -197,45 +196,45 @@ export default function App() {
     {
       questionText: 'What is the smallest country in the world?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
+        { answerText: 'Texas', isCorrect: false },
+        { answerText: 'Russia', isCorrect: false },
         { answerText: 'Vatican City', isCorrect: true },
-        { answerText: '', isCorrect: false }
+        { answerText: 'Japan', isCorrect: false }
       ]
     },
     {
       questionText: 'In what year was Alaska sold to the United States of America?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
+        { answerText: '2008', isCorrect: false },
+        { answerText: '1942', isCorrect: false },
         { answerText: '1867', isCorrect: true },
-        { answerText: '', isCorrect: false }
+        { answerText: '1999', isCorrect: false }
       ]
     },
     {
       questionText: 'When was the Declaration of Independence signed?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
-        { answerText: 'August 2, 1776', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'July 4th, 1708', isCorrect: false },
+        { answerText: 'August 2nd, 1776', isCorrect: true },
+        { answerText: 'Decemeber 25th, 5 BC', isCorrect: false },
+        { answerText: 'September 11th, 2001', isCorrect: false }
       ]
     },
     {
       questionText: 'The United States bought Alaska from which country?',
       answerOptions: [
         { answerText: 'Russia', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'China', isCorrect: false },
+        { answerText: 'Canada', isCorrect: false },
+        { answerText: 'Vatican City', isCorrect: false }
       ]
     },
     {
       questionText: 'Who was the fourth president of the United States?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
+        { answerText: 'George Washington', isCorrect: false },
+        { answerText: 'Abraham Lincoln', isCorrect: false },
+        { answerText: 'Benjamin Franklin', isCorrect: false },
         { answerText: 'James Madison', isCorrect: true }
       ]
     },
@@ -251,79 +250,79 @@ export default function App() {
     {
       questionText: 'What was the name of the landmark Supreme Court case that ruled the racial segregation of schools unconstitutional?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
+        { answerText: 'Roe v. Wade', isCorrect: false },
         { answerText: 'Brown v. Board of Education', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'United States v. Texas', isCorrect: false },
+        { answerText: 'Dobbs v. Jackson Womens Health Organization', isCorrect: false }
       ]
     },
     {
       questionText: 'In what year did child labor laws start in the United States?',
       answerOptions: [
         { answerText: '1938', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: '2023', isCorrect: false },
+        { answerText: '1856', isCorrect: false },
+        { answerText: '1989', isCorrect: false }
       ]
     },
     {
       questionText: 'The “shot heard round the world” describes the beginning of which battles in the American Revolution?',
       answerOptions: [
         { answerText: 'The Battles of Lexington and Concord', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'The Battle of the Bulge', isCorrect: false },
+        { answerText: 'The Battle of Gettsburg', isCorrect: false },
+        { answerText: 'The Battle of Schrute Farms', isCorrect: false }
       ]
     },
     {
       questionText: 'What is considered the largest empire in history?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: 'The Mongol Empire', isCorrect: true }
+        { answerText: 'The Akkadian Empire', isCorrect: false },
+        { answerText: 'The Mongolian Empire', isCorrect: false },
+        { answerText: 'The Roman Empire', isCorrect: false },
+        { answerText: 'The British Empire', isCorrect: true }
       ]
     },
     {
       questionText: 'Who was the first Emperor of Rome?',
       answerOptions: [
         { answerText: 'Augustus', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'Julius Caesar', isCorrect: false },
+        { answerText: 'Marcus Junius Brutus', isCorrect: false },
+        { answerText: 'Gaius Octavius Thurinus', isCorrect: false }
       ]
     },
     {
       questionText: 'What is the world’s oldest recorded civilization?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
+        { answerText: 'Chinese', isCorrect: false },
+        { answerText: 'Atlantas', isCorrect: false },
+        { answerText: 'Egypt', isCorrect: false },
         { answerText: 'Mesopotamia', isCorrect: true }
       ]
     },
     {
       questionText: 'What dynasty was Cleopatra part of?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
+        { answerText: 'The House of Habsburgs dynasty', isCorrect: false },
         { answerText: 'The Ptolemaic dynasty', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'The Imperial Dynasty of Japan', isCorrect: false },
+        { answerText: 'The West Saxon dynasty', isCorrect: false }
       ]
     },
     {
       questionText: 'Which fabric was invented in Ancient China?',
       answerOptions: [
         { answerText: 'Silk', isCorrect: true },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false },
-        { answerText: '', isCorrect: false }
+        { answerText: 'Denim', isCorrect: false },
+        { answerText: 'Leather', isCorrect: false },
+        { answerText: 'Linen', isCorrect: false }
       ]
     },
     {
       questionText: 'Which ancient figure is often considered the founder of Western philosophy?',
       answerOptions: [
-        { answerText: '', isCorrect: false },
+        { answerText: 'Friedrich Nietzsche', isCorrect: false },
         { answerText: 'Socrates', isCorrect: true },
         { answerText: '', isCorrect: false },
         { answerText: '', isCorrect: false }
@@ -724,18 +723,25 @@ export default function App() {
 
   return (
     <>
-      {/* <Start> </Start>
-    <Category> </Category> */}
       <div className='title'>
         <h1>🧠Psych!🧠</h1>
       </div>
+
+      <div className='start-game-div'> 
+      <Start> </Start>
+      </div>
+
+      <div className='category-div'> 
+        <Category> </Category>
+      </div>
+
       <div className='app'>
         {showScore ? (
 
           <div className='score-section'>
             You scored {score} out of {questions.length}
-            <button className='ui-buttons' id='restart'> Restart </button>
-            <button className='ui-buttons' id='quit'> Quit </button>
+            <button className='button' id='restart'> Restart </button>
+            <button className='button' id='quit'> Quit </button>
           </div>
 
         ) : (
@@ -749,7 +755,7 @@ export default function App() {
               </div>
               <div className='answer-section'>
                 {questions[currentQuestion].answerOptions.map((answerOptions) => (
-                  <button onClick={() => handleAnswerOptionClick(answerOptions.isCorrect)}>{answerOptions.answerText}</button>
+                  <button className="button" onClick={() => handleAnswerOptionClick(answerOptions.isCorrect)}>{answerOptions.answerText}</button>
                 ))}
               </div>
             </div>
