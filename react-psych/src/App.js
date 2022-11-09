@@ -730,6 +730,18 @@ export default function App() {
     let RandomTrivia = Math.floor(Math.random()*(Sciencerandom.length));
     Sciencerandom[RandomTrivia]
   }
+  function HistoryRandom(){
+    let RandomTrivia = Math.floor(Math.random()*(Historyrandom.length));
+    Historyrandom[RandomTrivia]
+  }
+  function LanguageRandom(){
+    let RandomTrivia = Math.floor(Math.random()*(Languagerandom.length));
+    Languagerandom[RandomTrivia]
+  }
+  function CultureRandom(){
+    let RandomTrivia = Math.floor(Math.random()*(Culturerandom.length));
+    Culturerandom[RandomTrivia]
+  }
 
 
 
