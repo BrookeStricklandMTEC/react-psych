@@ -23,9 +23,17 @@ body {
   padding-bottom: 15px;
 }
 /* Start game screen */
-/* .start-game-div{
+#startdiv{
+  background-color: red;
+  text-align: center;
+}
+#start{
+  
+}
+#canavs{
 
-} */
+}
+
 /*  */
 
 /* Category screen */

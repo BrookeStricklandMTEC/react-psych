@@ -4,13 +4,20 @@ import './App.css';
 
 export default function Start(){
 
-    // const [ start, setStart] = useState(false);
+    const StartGame = event => {
+    //     // return <div id='startdiv'> </div>
+    //     // return <div id='canvas'> </div>
+        
+    //     // startdiv.style.display = 'none'; 
+    //     // canavs.style.display = 'block';
+    //     // start(); 
 
-    function StartGame (){
-     console.log('start game');
+        console.log(event.currentTarget.id);
     }
-    return  <button id='start-game-button' className='button' onClick={StartGame()}> Start Game </button>
+    return <button id="start" className="button" onClick={StartGame}> Start Game</button>
+  
 
+    // const [ start, setStart] = useState(false);
     // window.onload = function() {
     // } 
     // let Gameloop = new Gameloop(); 
