@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Start from './Start';
 import Category from './Category'
 import './App.css';
+import Restart from './Restart';
+import Quit from './Quit';
 
 export default function App() {
 
@@ -715,6 +717,7 @@ export default function App() {
       setShowScore(true);
     }
   };
+
   return (
     <>
       <div className='title'>
@@ -734,8 +737,8 @@ export default function App() {
 
           <div className='score-section'>
             You scored {score} out of {questions.length}
-            <button className='button' id='restart'> Restart </button>
-            <button className='button' id='quit'> Quit </button>
+               <Restart> </Restart>
+               <Quit> </Quit>
           </div>
 
         ) : (
