@@ -3,11 +3,6 @@ import Start from './Start';
 import Category from './Category'
 import './App.css';
 
-
-// export default function App() {
-//   return <div className={'error'}> Error </div> 
-// }
-
 export default function App() {
 
   const Sciencequestions = [
@@ -720,32 +715,6 @@ export default function App() {
       setShowScore(true);
     }
   };
-
-  let Sciencerandom = []
-  let Historyrandom = []
-  let Languagerandom = []
-  let Culturerandom = []
-
-  function ScienceRandom(){
-    let RandomTrivia = Math.floor(Math.random()*(Sciencerandom.length));
-    Sciencerandom[RandomTrivia]
-  }
-  function HistoryRandom(){
-    let RandomTrivia = Math.floor(Math.random()*(Historyrandom.length));
-    Historyrandom[RandomTrivia]
-  }
-  function LanguageRandom(){
-    let RandomTrivia = Math.floor(Math.random()*(Languagerandom.length));
-    Languagerandom[RandomTrivia]
-  }
-  function CultureRandom(){
-    let RandomTrivia = Math.floor(Math.random()*(Culturerandom.length));
-    Culturerandom[RandomTrivia]
-  }
-
-
-
-
   return (
     <>
       <div className='title'>
@@ -790,7 +759,6 @@ export default function App() {
       </div>
     </>
   );
-
 
 }
 
