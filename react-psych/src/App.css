@@ -22,24 +22,21 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 /* Start game screen */
-#startdiv{
-  background-color: red;
-  text-align: center;
+#start-game-screen{
+  display: block; 
+  background-color: #07da63;
 }
-#start{
-  
-}
-#canavs{
-
-}
-
 /*  */
 
 /* Category screen */
-.category-div{
+.category-header{
   display: flex;
   justify-content: center;
+}
+.category-div{
+  
 }
 
 /*  */
@@ -65,9 +62,13 @@ body {
 #restart{
   margin-top: 50px;
   margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 #quit{
   margin-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .question-section {
   width: 100%;
@@ -94,6 +95,8 @@ body {
   justify-content: space-evenly;
 }
 .button {
+  margin-top: 15px;
+  margin-bottom: 15px;
   width: 100%;
   font-size: 16px;
   color: #ffffff;
@@ -105,6 +108,7 @@ body {
   align-items: center;
   border: 5px solid #234668;
   cursor: pointer;
+  text-decoration: none;
 }
 .correct {
   background-color: #07da63;
@@ -114,7 +118,7 @@ body {
 }
 .button:hover {
   background-color: #555e7d;
-  transition: .1s;
+  transition: .2s;
 }
 .button:focus {
   outline: none;

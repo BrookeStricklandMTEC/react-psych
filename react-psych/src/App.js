@@ -1,9 +1,19 @@
 import React, { useState } from 'react';
-import Start from './Start';
-import Category from './Category'
 import './App.css';
+import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom'; 
+
+import Questions from './Questions'
+
+import Start from './Start';
 import Restart from './Restart';
 import Quit from './Quit';
+
+import CategorySelect from './Category';
+import Language from './Language';
+import Culture from './Culture';
+import Science from './Science';
+import History from './History';
+
 
 export default function App() {
 
@@ -330,8 +340,8 @@ export default function App() {
       answerOptions: [
         { answerText: 'Three Gorges Dam', isCorrect: false },
         { answerText: 'Belo Monte', isCorrect: false },
-        { answerText: 'The Springfield Nuclear Power Plant', isCorrect: false },
-        { answerText: 'Chernobyl', isCorrect: true }
+        { answerText: 'Chernobyl', isCorrect: true },
+        { answerText: 'The Springfield Nuclear Power Plant ', isCorrect: false }
       ]
     },
     {
@@ -378,9 +388,9 @@ export default function App() {
     {
       questionText: 'Which of the following languages has no alphabet?',
       answerOptions: [
-        { answerText: 'Chinese', isCorrect: true },
-        { answerText: 'English', isCorrect: false },
         { answerText: 'Arabic', isCorrect: false },
+        { answerText: 'English', isCorrect: false },
+        { answerText: 'Chinese', isCorrect: true },
         { answerText: 'Japanese', isCorrect: false }
       ]
     },
@@ -388,17 +398,17 @@ export default function App() {
       questionText: 'Which continent has the most languages?',
       answerOptions: [
         { answerText: 'Africa', isCorrect: false },
-        { answerText: 'Asia', isCorrect: true },
+        { answerText: 'Australia', isCorrect: false },
         { answerText: 'Antartica', isCorrect: false },
-        { answerText: 'Australia', isCorrect: false }
+        { answerText: 'Asia', isCorrect: true }
       ]
     },
     {
       questionText: 'The expression “oy vey” comes from what language?',
       answerOptions: [
-        { answerText: 'French', isCorrect: false },
-        { answerText: 'Korean', isCorrect: false },
         { answerText: 'Yiddish', isCorrect: true },
+        { answerText: 'Korean', isCorrect: false },
+        { answerText: 'French', isCorrect: false },
         { answerText: 'Geonosian', isCorrect: false }
       ]
     },
@@ -414,9 +424,9 @@ export default function App() {
     {
       questionText: 'What is the national language of India?',
       answerOptions: [
-        { answerText: 'Hindi', isCorrect: true },
-        { answerText: 'Mandarin Chinese', isCorrect: false },
         { answerText: 'Swiss', isCorrect: false },
+        { answerText: 'Mandarin Chinese', isCorrect: false },
+        { answerText: 'Hindi', isCorrect: true },
         { answerText: 'Vietnamese', isCorrect: false }
       ]
     },
@@ -442,34 +452,34 @@ export default function App() {
       questionText: 'What country has the most official languages?',
       answerOptions: [
         { answerText: 'Afghanistan', isCorrect: false },
-        { answerText: 'Canada', isCorrect: false },
         { answerText: 'Zimbabwe', isCorrect: true },
+        { answerText: 'Canada', isCorrect: false },
         { answerText: 'Guinea', isCorrect: false }
       ]
     },
     {
       questionText: 'When would you say namaste to someone?',
       answerOptions: [
-        { answerText: 'When you leave their house', isCorrect: false },
+        { answerText: 'When greeting them', isCorrect: true },
         { answerText: 'If you want them to leave you alone', isCorrect: false },
         { answerText: 'To show respect', isCorrect: false },
-        { answerText: 'When greeting them', isCorrect: true }
+        { answerText: 'When you leave their house', isCorrect: false }
       ]
     },
     {
       questionText: 'According to dictionary entries, which language has the largest number of words (more than 200,000 words)?',
       answerOptions: [
-        { answerText: 'English', isCorrect: true },
+        { answerText: 'Chinese', isCorrect: false },
         { answerText: 'Hindi', isCorrect: false },
         { answerText: 'Hebrew', isCorrect: false },
-        { answerText: 'Chinese', isCorrect: false }
+        { answerText: 'English', isCorrect: true }
       ]
     },
     {
       questionText: 'Which of the following languages is related to Spanish the most?',
       answerOptions: [
-        { answerText: 'Portugese', isCorrect: false },
         { answerText: 'Italian', isCorrect: true },
+        { answerText: 'Portugese', isCorrect: false },
         { answerText: 'Malay', isCorrect: false },
         { answerText: 'Lahnda', isCorrect: false }
       ]
@@ -479,33 +489,33 @@ export default function App() {
       answerOptions: [
         { answerText: 'Around 500', isCorrect: false },
         { answerText: 'Perhaps 2,000', isCorrect: false },
-        { answerText: 'Around 7,000', isCorrect: true },
-        { answerText: 'Maybe 2', isCorrect: false }
+        { answerText: 'Maybe 2 ', isCorrect: false },
+        { answerText: 'Around 7,000', isCorrect: true }
       ]
     },
     {
       questionText: 'Which of the following languages is constructed by J. R. R. Tolkien, the author of The Lord of the Rings?',
       answerOptions: [
         { answerText: 'Klingon', isCorrect: false },
-        { answerText: 'High Valyrian', isCorrect: false },
+        { answerText: 'Valarin', isCorrect: true },
         { answerText: 'Pig-Latin', isCorrect: false },
-        { answerText: 'Valarin', isCorrect: true }
+        { answerText: 'High Valyrian', isCorrect: false }
       ]
     },
     {
       questionText: 'What was the first language Jesus spoke?',
       answerOptions: [
-        { answerText: 'Aramaic', isCorrect: true },
-        { answerText: 'English', isCorrect: false },
         { answerText: 'Hebrew', isCorrect: false },
+        { answerText: 'English', isCorrect: false },
+        { answerText: 'Aramaic', isCorrect: true },
         { answerText: 'Arabic', isCorrect: false }
       ]
     },
     {
       questionText: 'What is the hardest language to learn?',
       answerOptions: [
-        { answerText: 'Spanish', isCorrect: false },
         { answerText: 'Mandarin', isCorrect: true },
+        { answerText: 'Spanish', isCorrect: false },
         { answerText: 'Turkish', isCorrect: false },
         { answerText: 'Russian', isCorrect: false }
       ]
@@ -519,17 +529,17 @@ export default function App() {
     {
       questionText: 'Which Avenger other than Captain America was able to pick up Thors Mjolnir in the Marvel movies?',
       answerOptions: [
-        { answerText: 'Vision', isCorrect: true },
+        { answerText: 'Batman', isCorrect: false },
         { answerText: 'Hulk', isCorrect: false },
         { answerText: 'Spider-Man', isCorrect: false },
-        { answerText: 'Batman', isCorrect: false }
+        { answerText: 'Vision', isCorrect: true }
       ]
     },
     {
       questionText: 'Which movie kicked off the Skywalker saga in 1977?',
       answerOptions: [
-        { answerText: 'Return of the Jedi', isCorrect: false },
         { answerText: 'A New Hope', isCorrect: true },
+        { answerText: 'Return of the Jedi ', isCorrect: false },
         { answerText: 'Lego Star Wars: The Force Awakens', isCorrect: false },
         { answerText: 'Rogue One: A Star Wars Story', isCorrect: false }
       ]
@@ -538,8 +548,8 @@ export default function App() {
       questionText: 'What is Kramers first name on Seinfeld?',
       answerOptions: [
         { answerText: 'Wanda', isCorrect: false },
-        { answerText: 'Joe', isCorrect: false },
         { answerText: 'Cosmo', isCorrect: true },
+        { answerText: 'Joe', isCorrect: false },
         { answerText: 'Derek', isCorrect: false }
       ]
     },
@@ -555,9 +565,9 @@ export default function App() {
     {
       questionText: 'What movie in 2019 topped Avatar as the highest-grossing film of all time?',
       answerOptions: [
-        { answerText: 'Avengers: Endgame', isCorrect: true },
+        { answerText: 'Joker ', isCorrect: false },
         { answerText: 'Alita Battle Angel', isCorrect: false },
-        { answerText: 'Joker', isCorrect: false },
+        { answerText: 'Avengers: Endgame', isCorrect: true },
         { answerText: 'Frozen 2', isCorrect: false }
       ]
     },
@@ -565,17 +575,17 @@ export default function App() {
       questionText: 'Who is the antagonist in the 1988 film “Die Hard”?',
       answerOptions: [
         { answerText: 'Patrick Bateman', isCorrect: false },
-        { answerText: 'Hans Gruber', isCorrect: true },
+        { answerText: 'Viggo Tarasov ', isCorrect: false },
         { answerText: 'Hannibal Lecter', isCorrect: false },
-        { answerText: 'Viggo Tarasov', isCorrect: false }
+        { answerText: 'Hans Gruber', isCorrect: true }
       ]
     },
     {
       questionText: 'What film did the phrase “I see dead people” come from?',
       answerOptions: [
         { answerText: 'The Walking Dead', isCorrect: false },
-        { answerText: 'The Shining', isCorrect: false },
         { answerText: 'The Sixth Sense', isCorrect: true },
+        { answerText: 'The Shining', isCorrect: false },
         { answerText: 'Ash Vs Evil Dead', isCorrect: false }
       ]
     },
@@ -601,8 +611,8 @@ export default function App() {
       questionText: 'Who is Marvel’s first superhero(s) in the comic books?',
       answerOptions: [
         { answerText: 'Ghost Rider', isCorrect: false },
-        { answerText: 'The Human Torch', isCorrect: true },
         { answerText: 'Thanos', isCorrect: false },
+        { answerText: 'The Human Torch', isCorrect: true },
         { answerText: 'Guardians of the Galaxy', isCorrect: false }
       ]
     },
@@ -610,8 +620,8 @@ export default function App() {
       questionText: 'What is the name of the mountain in “Lord of the Rings” which the One Ring must be thrown into?',
       answerOptions: [
         { answerText: 'Mount Death', isCorrect: false },
-        { answerText: 'Mount Rushmore', isCorrect: false },
         { answerText: 'Mount Doom', isCorrect: true },
+        { answerText: 'Mount Rushmore', isCorrect: false },
         { answerText: 'Pompeii', isCorrect: false }
       ]
     },
@@ -620,8 +630,8 @@ export default function App() {
       answerOptions: [
         { answerText: 'One Direction', isCorrect: false },
         { answerText: 'Slipknot', isCorrect: false },
-        { answerText: 'Big Time Rush', isCorrect: false },
-        { answerText: 'Backstreet Boys', isCorrect: true }
+        { answerText: 'Backstreet Boys', isCorrect: true },
+        { answerText: 'Big Time Rush', isCorrect: false }
       ]
     },
     {
@@ -636,8 +646,8 @@ export default function App() {
     {
       questionText: 'How many languages can C-3PO speak in Star Wars?',
       answerOptions: [
-        { answerText: 'One', isCorrect: false },
         { answerText: 'Six Million', isCorrect: true },
+        { answerText: 'One', isCorrect: false },
         { answerText: 'Two', isCorrect: false },
         { answerText: 'Sixteen Thousand Five Hundred and Three', isCorrect: false }
       ]
@@ -647,8 +657,8 @@ export default function App() {
       answerOptions: [
         { answerText: 'Family Guy', isCorrect: false },
         { answerText: 'Game of Thrones', isCorrect: false },
-        { answerText: 'The Simpsons', isCorrect: true },
-        { answerText: 'The Cleveland Show', isCorrect: false }
+        { answerText: 'The Cleveland Show', isCorrect: false },
+        { answerText: 'The Simpsons', isCorrect: true }
       ]
     },
     {
@@ -673,17 +683,17 @@ export default function App() {
       questionText: 'What’s Spider-Man’s middle name?',
       answerOptions: [
         { answerText: 'May', isCorrect: false },
-        { answerText: 'Benjamin', isCorrect: true },
+        { answerText: 'MJ', isCorrect: false },
         { answerText: 'Parker', isCorrect: false },
-        { answerText: 'MJ', isCorrect: false }
+        { answerText: 'Benjamin', isCorrect: true }
       ]
     },
     {
       questionText: 'In The Matrix: What software company did Neo work for?',
       answerOptions: [
-        { answerText: 'Twitter', isCorrect: false },
-        { answerText: 'Electronic Arts', isCorrect: false },
         { answerText: 'MetaCortex', isCorrect: true },
+        { answerText: 'Electronic Arts', isCorrect: false },
+        { answerText: 'Twitter', isCorrect: false },
         { answerText: 'SpaceMonkey', isCorrect: false }
       ]
     },
@@ -691,9 +701,9 @@ export default function App() {
       questionText: 'What was the first text sent by SMS?',
       answerOptions: [
         { answerText: 'Hello World', isCorrect: false },
-        { answerText: 'Happy Hanukkah', isCorrect: false },
+        { answerText: 'Merry Christmas', isCorrect: true },
         { answerText: 'Hey, just wondering if you got your photos printed?', isCorrect: false },
-        { answerText: 'Merry Christmas', isCorrect: true }
+        { answerText: 'Happy Hanukkah', isCorrect: false }
       ]
     }
   ]
@@ -724,44 +734,37 @@ export default function App() {
         <h1>🧠Psych!🧠</h1>
       </div>
 
-      <div className='start-game-div'> 
-      <Start> </Start>
+      <Router> 
+        <Routes>
+          <Route path='/' element={<div className='start-game-div'> <Start> </Start></div>}> </Route>
+          <Route path='/category' element={<div className='category-div'> 
+            <CategorySelect> </CategorySelect>
+          </div>}> 
+      </Route>
+
+        </Routes>
+      </Router>
+
+      {/* <div className='category-div'> 
+        <CategorySelect> </CategorySelect>
+        <Science> </Science>
+        <History> </History>
+        <Language> </Language>
+        <Culture> </Culture> 
       </div>
-
-      <div className='category-div'> 
-        <Category> </Category>
-      </div>
-
-      <div className='app'>
-        {showScore ? (
-
-          <div className='score-section'>
-            You scored {score} out of {questions.length}
-               <Restart> </Restart>
-               <Quit> </Quit>
-          </div>
-
-        ) : (
-          <>
-            <div className='app-build'>
-              <div className='question-section'>
-                <div className='question-count'>
-                  <span> Question {currentQuestion + 1}</span>/{questions.length}
-                </div>
-                <div className='question-text'>{questions[currentQuestion].questionText}</div>
-              </div>
-              <div className='answer-section'>
-                {questions[currentQuestion].answerOptions.map((answerOptions) => (
-                  <button className="button" onClick={() => handleAnswerOptionClick(answerOptions.isCorrect)}>{answerOptions.answerText}</button>
-                ))}
-              </div>
-            </div>
-          </>
-        )}
-
-      </div>
+      <Questions 
+      showScore = {showScore}
+      score = {score}
+      currentQuestion = {currentQuestion}
+      Restart = {Restart}
+      Quit = {Quit}
+      questions = {questions}
+      handleAnswerOptionClick = {handleAnswerOptionClick}
+      ></Questions> */}
     </>
   );
+
+  
 
 }
 
