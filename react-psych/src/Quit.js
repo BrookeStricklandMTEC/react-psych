@@ -7,7 +7,7 @@ export default function Quit (){
      // end game brings back to start screen 
     };
     return (
-        <div>
+        <div className='quit-div'>
             <button id="quit" className="button" onClick={handleClick}>
                 Quit
             </button>

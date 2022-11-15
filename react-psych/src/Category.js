@@ -1,5 +1,6 @@
 import React from 'react'; 
 import './App.css'
+import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom'; 
 
 
 export default function CategorySelect (){
@@ -7,11 +8,13 @@ export default function CategorySelect (){
         
     }
     return <>
-    <h2 className='category-header'> Select a Category </h2>
-    <button id='science-select' className='button'onClick={handleClick}> Science </button>
-    <button id='science-select' className='button'onClick={handleClick}> Science </button>
-    <button id='science-select' className='button'onClick={handleClick}> Science </button>
-    <button id='science-select' className='button'onClick={handleClick}> Science </button>
+    <div className='category-content'>
+     <h2 className='category-header'> Select a Category </h2>
+     <Link id="science-button" className="button" to={'/App/Sciencequestions'}> Science </Link>
+     <Link id="science-button" className="button" to={'/App/Historyquestions'}> History </Link>
+     <Link id="science-button" className="button" to={'/App/Languagequestions'}> Language </Link>
+     <Link id="science-button" className="button" to={'/App/Culturequestions'}> Pop Culture </Link>
+    </div>
     </>
 }
 

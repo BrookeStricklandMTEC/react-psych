@@ -9,11 +9,6 @@ import Restart from './Restart';
 import Quit from './Quit';
 
 import CategorySelect from './Category';
-import Language from './Language';
-import Culture from './Culture';
-import Science from './Science';
-import History from './History';
-
 
 export default function App() {
 
@@ -737,21 +732,15 @@ export default function App() {
       <Router> 
         <Routes>
           <Route path='/' element={<div className='start-game-div'> <Start> </Start></div>}> </Route>
-          <Route path='/category' element={<div className='category-div'> 
-            <CategorySelect> </CategorySelect>
-          </div>}> 
-      </Route>
-
+          <Route path='/category' element={<div className='category-div'> <CategorySelect> </CategorySelect> </div>}> </Route>
+          <Route path='/Sciencequestions' element={<button id='science-select' className='button'> Science </button>}> </Route>
+          {/* When category is selected, path to that category question is created */}
+          {/* When restart is selected, path to beginning of quiz is created, how to implement what user has selected? */}
+          {/* When quit is selected, brings back to Start Game page */}
+          {/* <Route path='/start' element={<div className='start-game-div'> <Quit> </Quit> </div>}> </Route> */}
         </Routes>
       </Router>
 
-      {/* <div className='category-div'> 
-        <CategorySelect> </CategorySelect>
-        <Science> </Science>
-        <History> </History>
-        <Language> </Language>
-        <Culture> </Culture> 
-      </div>
       <Questions 
       showScore = {showScore}
       score = {score}
@@ -760,7 +749,7 @@ export default function App() {
       Quit = {Quit}
       questions = {questions}
       handleAnswerOptionClick = {handleAnswerOptionClick}
-      ></Questions> */}
+      ></Questions>
     </>
   );
 
