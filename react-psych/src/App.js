@@ -725,19 +725,16 @@ export default function App() {
 
   return (
     <>
-      <div className='title'>
-        <h1>🧠Psych!🧠</h1>
-      </div>
-
       <Router> 
         <Routes>
           <Route path='/' element={<div className='start-game-div'> <Start> </Start></div>}> </Route>
           <Route path='/category' element={<div className='category-div'> <CategorySelect> </CategorySelect> </div>}> </Route>
           <Route path='/Sciencequestions' element={<button id='science-select' className='button'> Science </button>}> </Route>
-          {/* When category is selected, path to that category question is created */}
-          {/* When restart is selected, path to beginning of quiz is created, how to implement what user has selected? */}
-          {/* When quit is selected, brings back to Start Game page */}
-          {/* <Route path='/start' element={<div className='start-game-div'> <Quit> </Quit> </div>}> </Route> */}
+          {/* <Route path='/Historyquestions' element={<button id='history-select' className='button'> History </button>}> </Route>
+          <Route path='/Languagequestions' element={<button id='language-select' className='button'> Language </button>}> </Route>
+          <Route path='/Culturequestions' element={<button id='culture-select' className='button'> Pop Culture </button>}> </Route>
+          <Route path='/Quit' element={<button id='quit' className='button'> Quit </button>}> </Route>
+          <Route path='/Restart' element={<button id='restart' className='button'> Restart </button>}> </Route> */}
         </Routes>
       </Router>
 

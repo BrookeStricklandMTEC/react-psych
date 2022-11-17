@@ -8,7 +8,14 @@ export default function Start(){
     const StartGame = event => {
     }
     <body onLoad={StartGame}> </body>
-    return <Link id="start" className="button" to={'/category'}> Start Game </Link>
+    return <>
+        <div className='start-title'>
+            <h1>🧠PSYCH!🧠</h1>
+        </div>
+        <Link id="start" className="button" to={'/category'}> Start Game </Link> 
+    </>
+    
+   
 }   
 
 

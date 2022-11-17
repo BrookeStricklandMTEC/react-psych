@@ -1,14 +1,14 @@
 * {
-  font-family: "Verdana", cursive, sans-serif;
+  font-family: 'Carter One', cursive;
+  letter-spacing: 1.5px;
   color: #ffffff;
 }
 body {
   position: relative;
   background-attachment: fixed;
-  background-image: url('../quiz.jpg');
+  background-image: url('../images/background2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-
   background-color: black;
   display: flex;
   justify-content: center;
@@ -16,22 +16,21 @@ body {
   min-height: 100vh;
 
 }
-.title{
-  display: flex;
-  justify-content: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
+
 
 /* Start game screen */
+.start-title{
+  font-size: 50px;
+}
 .start-game-div{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 150px;
 }
 #start{
+  margin-left: 135px;
+  width: 300px;
   padding: 15px;
-  margin-top: 100px;
 }
 /*  */
 
@@ -136,7 +135,8 @@ body {
     margin: 0;
   }
   * {
-    font-family: "Verdana", cursive, sans-serif;
+    font-family: 'Carter One', cursive;
+    letter-spacing: 1.5px;
     color: #ffffff;
   }
   body {
@@ -151,6 +151,22 @@ body {
     justify-content: center;
     padding-top: 5px;
     padding-bottom: 2px;
+  }
+  .start-title{
+    font-size: 25px;
+    margin-left: 25px;
+  }
+  .start-game-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 55px;
+  }
+  #start{
+    margin-left: 17px;
+    width: 300px;
+    padding: 15px;
+    margin-top: 130px;
   }
   .app {
     background-color: #8a00c2;

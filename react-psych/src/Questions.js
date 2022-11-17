@@ -6,6 +6,8 @@ export default function Questions ({showScore, score, currentQuestion,Restart,Qu
 <div className='app'>
     {showScore ? (
 
+      // return <div className='title'> <h1>🧠PSYCH!🧠</h1> </div>
+
         <div className='score-section'>
             You scored {score} out of {questions.length}
                <Restart> </Restart>
