@@ -10,7 +10,7 @@ export default function Start(){
     <body onLoad={StartGame}> </body>
     return <>
         <div className='start-title'>
-            <h1>🧠PSYCH!🧠</h1>
+            <h1> PSYCH!</h1>
         </div>
         <Link id="start" className="button" to={'/category'}> Start Game </Link> 
     </>

@@ -27,7 +27,7 @@ body {
   justify-content: center;
 }
 #start{
-  margin-left: 135px;
+  margin-left: 5px;
   width: 300px;
   padding: 15px;
 }
@@ -157,7 +157,7 @@ body {
   }
   .start-title{
     font-size: 25px;
-    margin-left: 25px;
+    margin-left: 40px;
   }
   .start-game-div{
     display: flex;
@@ -166,10 +166,10 @@ body {
     margin-top: 55px;
   }
   #start{
-    margin-left: 17px;
-    width: 300px;
+    margin-left: 5px;
+    width: 200px;
     padding: 15px;
-    margin-top: 130px;
+    margin-top: 110px;
   }
 /*  */
 
