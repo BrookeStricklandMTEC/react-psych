@@ -11,9 +11,9 @@ export default function CategorySelect (){
     <div className='category-content'>
      <h2 className='category-header'> Select a Category </h2>
      <Link id="science-button" className="button" to={'/App/Sciencequestions'}> Science </Link>
-     <Link id="science-button" className="button" to={'/App/Historyquestions'}> History </Link>
-     <Link id="science-button" className="button" to={'/App/Languagequestions'}> Language </Link>
-     <Link id="science-button" className="button" to={'/App/Culturequestions'}> Pop Culture </Link>
+     <Link id="history-button" className="button" to={'/App/Historyquestions'}> History </Link>
+     <Link id="language-button" className="button" to={'/App/Languagequestions'}> Language </Link>
+     <Link id="culture-button" className="button" to={'/App/Culturequestions'}> Pop Culture </Link>
     </div>
     </>
 }

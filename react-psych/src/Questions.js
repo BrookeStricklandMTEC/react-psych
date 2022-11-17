@@ -7,6 +7,7 @@ export default function Questions ({showScore, score, currentQuestion,Restart,Qu
     {showScore ? (
 
       // return <div className='title'> <h1>🧠PSYCH!🧠</h1> </div>
+      
 
         <div className='score-section'>
             You scored {score} out of {questions.length}

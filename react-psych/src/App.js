@@ -729,24 +729,14 @@ export default function App() {
         <Routes>
           <Route path='/' element={<div className='start-game-div'> <Start> </Start></div>}> </Route>
           <Route path='/category' element={<div className='category-div'> <CategorySelect> </CategorySelect> </div>}> </Route>
-          <Route path='/Sciencequestions' element={<button id='science-select' className='button'> Science </button>}> </Route>
-          {/* <Route path='/Historyquestions' element={<button id='history-select' className='button'> History </button>}> </Route>
-          <Route path='/Languagequestions' element={<button id='language-select' className='button'> Language </button>}> </Route>
-          <Route path='/Culturequestions' element={<button id='culture-select' className='button'> Pop Culture </button>}> </Route>
-          <Route path='/Quit' element={<button id='quit' className='button'> Quit </button>}> </Route>
-          <Route path='/Restart' element={<button id='restart' className='button'> Restart </button>}> </Route> */}
+          <Route path='/App/Sciencequestions' element={<Questions showScore = {showScore} score = {score} currentQuestion = {currentQuestion} Restart = {Restart} Quit = {Quit} questions = {questions} handleAnswerOptionClick = {handleAnswerOptionClick}></Questions>}> </Route>
+          {/* <Route path='App/Historyquestions' element={<button id='history-select' className='button'> History </button>}> </Route>
+          <Route path='App/Languagequestions' element={<button id='language-select' className='button'> Language </button>}> </Route>
+          <Route path='App/Culturequestions' element={<button id='culture-select' className='button'> Pop Culture </button>}> </Route>
+          <Route path='App/Quit' element={<button id='quit' className='button'> Quit </button>}> </Route>
+          <Route path='App/Restart' element={<button id='restart' className='button'> Restart </button>}> </Route> */}
         </Routes>
       </Router>
-
-      <Questions 
-      showScore = {showScore}
-      score = {score}
-      currentQuestion = {currentQuestion}
-      Restart = {Restart}
-      Quit = {Quit}
-      questions = {questions}
-      handleAnswerOptionClick = {handleAnswerOptionClick}
-      ></Questions>
     </>
   );
 
