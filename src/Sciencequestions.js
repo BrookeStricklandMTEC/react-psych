@@ -4,7 +4,7 @@ import './App.css';
 import Questions from './Questions'
 
 
-const Sciencequestions = [
+const questions = [
     {
       questionText: 'How many teeth does an adult human have?',
       answerOptions: [
@@ -185,10 +185,18 @@ const Sciencequestions = [
   ]
 
  export default function Sciencequestions(){ 
-
-    return <>
-        <Questions showScore = {showScore} score = {score} currentQuestion = {currentQuestion} Restart = {Restart} Quit = {Quit} questions = {questions} handleAnswerOptionClick = {handleAnswerOptionClick}/>
-    </>
+    let showScore, score, currentQuestion, Restart, Quit, handleAnswerOptionClick;
+    return (
+        <Questions 
+          showScore = {showScore} 
+          score = {score} 
+          currentQuestion = {currentQuestion} 
+          Restart = {Restart} 
+          Quit = {Quit} 
+          questions = {questions} 
+          handleAnswerOptionClick = {handleAnswerOptionClick}
+        />
+    )
 
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom'; 
-
+import Sciencequestions from './Sciencequestions';
 import Questions from './Questions'
 
 import Start from './Start';
