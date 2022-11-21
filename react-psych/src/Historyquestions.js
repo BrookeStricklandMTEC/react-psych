@@ -1,9 +1,10 @@
-import React from 'react'; 
+import React, { useState } from 'react'; 
 import { Link } from 'react-router-dom';
 import './App.css';
 import Questions from './Questions'
 
-const Historyquestions = [
+export default function Historyquestions(){ 
+  const Historyquestions = [
     {
       questionText: 'What is the smallest country in the world?',
       answerOptions: [
@@ -185,11 +186,24 @@ const Historyquestions = [
       ]
     }
   ]
+  let questions = [...Historyquestions];
+    
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [showScore, setShowScore] = useState(false);
+  const [score, setScore] = useState(0);
 
-export default function Historyquestions(){ 
-
-    return <>
-        <Questions showScore = {showScore} score = {score} currentQuestion = {currentQuestion} Restart = {Restart} Quit = {Quit} questions = {questions} handleAnswerOptionClick = {handleAnswerOptionClick}/>
-    </>
-
+  const handleAnswerOptionClick = (isCorrect) => {
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+    const nextQuestion = currentQuestion + 1;
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion);
+    } else {
+      setShowScore(true);
+    }
+  };
+  return (
+    <Questions showScore = {showScore} score = {score} currentQuestion = {currentQuestion} questions = {questions} handleAnswerOptionClick = {handleAnswerOptionClick}></Questions>
+)
 }

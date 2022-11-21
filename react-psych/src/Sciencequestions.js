@@ -195,7 +195,6 @@ export default function Sciencequestions(){
         if (isCorrect) {
           setScore(score + 1);
         }
-    
         const nextQuestion = currentQuestion + 1;
         if (nextQuestion < questions.length) {
           setCurrentQuestion(nextQuestion);
@@ -204,9 +203,9 @@ export default function Sciencequestions(){
         }
       };
 
-      return <>
-        <Questions showScore = {showScore} score = {score} currentQuestion = {currentQuestion} questions = {questions} handleAnswerOptionClick = {handleAnswerOptionClick} useState = {useState} />
-      </>
+      return (
+        <Questions showScore = {showScore} score = {score} currentQuestion = {currentQuestion} questions = {questions} handleAnswerOptionClick = {handleAnswerOptionClick}></Questions>
+    )
 }
 
 

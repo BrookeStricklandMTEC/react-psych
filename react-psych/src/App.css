@@ -1,6 +1,6 @@
 * {
   font-family: 'Carter One', cursive;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.8px;
   color: #ffffff;
 }
 body {
@@ -14,9 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-
 }
-
 /* Start game screen */
 .start-title{
   font-size: 50px;
@@ -57,7 +55,7 @@ body {
   border-radius: 15px;
   margin: 20px;
   padding: 20px;
-  box-shadow: 10px 10px 42px 0px rgba(#8a00c2);
+  box-shadow: 10px 10px 42px 0px rgba(#580b77);
 }
 .score-section {
   font-size: 24px;
@@ -171,20 +169,20 @@ body {
     padding: 15px;
     margin-top: 110px;
   }
-/*  */
+  /*  */
 
-/* Category screen */
-.category-header{
-  display: flex;
-  justify-content: center;
-}
-.category-div{
-  margin-bottom: 120px;
-}
-.category-content{
-  margin-top: 200px;
-}
-/*  */
+  /* Category screen */
+  .category-header{
+    display: flex;
+    justify-content: center;
+  }
+  .category-div{
+    margin-bottom: 120px;
+  }
+  .category-content{
+    margin-top: 200px;
+  }
+ /*  */
   .app {
     background-color: #8a00c2;
     width: 350px;

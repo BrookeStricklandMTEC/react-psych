@@ -6,11 +6,13 @@ import Start from './Start';
 import Restart from './Restart';
 import Quit from './Quit';
 
-
 import CategorySelect from './Category';
 
-import Questions from './Questions'
 import Sciencequestions from './Sciencequestions';
+import Historyquestions from './Historyquestions';
+import Languagequestions from './Languagequestions';
+import Culturequestions from './Culturequestions';
+
 
 export default function App() {
   return (
@@ -19,19 +21,16 @@ export default function App() {
         <Routes>
           <Route path='/' element={<div className='start-game-div'> <Start> </Start></div>}> </Route>
           <Route path='/category' element={<div className='category-div'> <CategorySelect> </CategorySelect> </div>}> </Route>
-          <Route path='/Sciencequestions'element={<div className='app'> <Sciencequestions> </Sciencequestions> </div>}> </Route>
-          {/* <Route path='App/Historyquestions' element={<button id='history-select' className='button'> History </button>}> </Route> */}
-          {/* <Route path='App/Languagequestions' element={<button id='language-select' className='button'> Language </button>}> </Route> */}
-          {/* <Route path='App/Culturequestions' element={<button id='culture-select' className='button'> Pop Culture </button>}> </Route> */}
+          <Route path='/Sciencequestions'element={<Sciencequestions></Sciencequestions>}> </Route>
+          <Route path='/Historyquestions' element={<Historyquestions> </Historyquestions>}> </Route>
+          <Route path='/Languagequestions' element={<Languagequestions> </Languagequestions>}> </Route>
+          <Route path='/Culturequestions' element={<Culturequestions> </Culturequestions>}> </Route>
           <Route path='/' element={<div className='button' id='quit'><Start> Quit </Start> </div>}> </Route>
-          {/* <Route path='/' element={<div id='restart' className='button'> <Restart> Restart </Restart> </div>}> </Route>  */}
+          <Route path='/' element={<div id='restart' className='button'> <Restart> Restart </Restart> </div>}> </Route> 
         </Routes>
       </Router>
     </>
   );
-
-  
-
 }
 
 
