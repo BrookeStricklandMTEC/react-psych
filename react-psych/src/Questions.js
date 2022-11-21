@@ -3,7 +3,7 @@ import './App.css';
 // import Restart from './Restart';
 // import Quit from './Quit';
 
-export default function Questions ({showScore, score, currentQuestion,Restart,Quit,questions,handleAnswerOptionClick}) { 
+export default function Questions ({showScore, score, currentQuestion,questions,handleAnswerOptionClick}) { 
 
 return <div className='app'>
     {showScore ? (
