@@ -150,7 +150,7 @@ export default function Languagequestions(){
       ]
     },
     {
-      questionText: 'In Rich and Morty: What sauce is Rick obsessed with?',
+      questionText: 'In Rick and Morty: What sauce is Rick obsessed with?',
       answerOptions: [
         { answerText: 'Szechuan sauce', isCorrect: true },
         { answerText: 'Popeyes™ Mardi Gras Mustard', isCorrect: false },
