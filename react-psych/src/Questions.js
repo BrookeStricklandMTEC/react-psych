@@ -1,7 +1,7 @@
 import React from 'react'; 
 import './App.css';
-// import Restart from './Restart';
-// import Quit from './Quit';
+import Restart from './Restart';
+import Quit from './Quit';
 
 export default function Questions ({showScore, score, currentQuestion,questions,handleAnswerOptionClick}) { 
 
@@ -9,8 +9,8 @@ return <div className='app'>
     {showScore ? (
         <div className='score-section'>
             You scored {score} out of {questions.length}
-               {/* <Restart> </Restart> */}
-               {/* <Quit> </Quit> */}
+               <Restart> </Restart>
+               <Quit> </Quit>
         </div>
         ) : (
           <>

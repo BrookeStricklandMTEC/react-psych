@@ -4,10 +4,6 @@ import './App.css';
 
 
 export default function Start(){
-
-    const StartGame = event => {
-    }
-    <body onLoad={StartGame}> </body>
     return <>
         <div className='start-title'>
             <h1> PSYCH!</h1>

@@ -1,12 +1,11 @@
 import React from 'react'; 
+import { Link } from 'react-router-dom';
 import './App.css'
 
 export default function Quit (){
     return (
         <div className='quit-div'>
-            <button id="quit" className="button">
-                Quit
-            </button>
+            <Link id="quit" className="button" to={'/'}> Quit </Link> 
         </div>
     );
 }

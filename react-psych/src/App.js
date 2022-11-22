@@ -25,8 +25,8 @@ export default function App() {
           <Route path='/Historyquestions' element={<Historyquestions> </Historyquestions>}> </Route>
           <Route path='/Languagequestions' element={<Languagequestions> </Languagequestions>}> </Route>
           <Route path='/Culturequestions' element={<Culturequestions> </Culturequestions>}> </Route> 
-          {/* <Route path='/' element={ brings you back to beginning of cateogry you clicked on }> </Route> */}
-          {/* <Route path='/' element={<div className='start-game-div'> <Start> </Start> </div>}> </Route>  */}
+          <Route path='/' element={<Restart></Restart>}> </Route> 
+          <Route path='/' element={<div className='start-game-div'> <Start> </Start> </div>}> </Route> 
         </Routes>
       </Router>
     </>

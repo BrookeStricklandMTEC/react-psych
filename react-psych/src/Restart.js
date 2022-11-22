@@ -2,18 +2,10 @@ import React from 'react';
 import './App.css'
 
 export default function Restart (){ 
-    
-    const restartFunction = event => {
-    //  this.back()
-    //  or
-    // .reload()
-    };
-
-   
     return (
 
         <div>
-            <button id="restart" className="button" onClick={restartFunction}>
+            <button id="restart" className="button" onClick={() => window.location.reload(false)}>
                 Restart
             </button>
         </div>
