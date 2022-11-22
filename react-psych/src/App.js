@@ -27,6 +27,7 @@ export default function App() {
           <Route path='/Culturequestions' element={<Culturequestions> </Culturequestions>}> </Route> 
           <Route path='/' element={<Restart></Restart>}> </Route> 
           <Route path='/' element={<div className='start-game-div'> <Start> </Start> </div>}> </Route> 
+          {/* Route to View Results */}
         </Routes>
       </Router>
     </>
