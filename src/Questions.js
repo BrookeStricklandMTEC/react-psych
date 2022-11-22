@@ -1,16 +1,16 @@
 import React from 'react'; 
 import './App.css';
-import Restart from './Restart';
-import Quit from './Quit';
+// import Restart from './Restart';
+// import Quit from './Quit';
 
-export default function Questions ({showScore, score, currentQuestion,Restart,Quit, questions,handleAnswerOptionClick,useState}) { 
+export default function Questions ({showScore, score, currentQuestion,questions,handleAnswerOptionClick}) { 
 
-<div className='app'>
+return <div className='app'>
     {showScore ? (
         <div className='score-section'>
             You scored {score} out of {questions.length}
-               <Restart> </Restart>
-               <Quit> </Quit>
+               {/* <Restart> </Restart> */}
+               {/* <Quit> </Quit> */}
         </div>
         ) : (
           <>
@@ -22,13 +22,12 @@ export default function Questions ({showScore, score, currentQuestion,Restart,Qu
                 <div className='question-text'>{questions[currentQuestion].questionText}</div>
               </div>
               <div className='answer-section'>
-                {questions[currentQuestion].answerOptions.map((answerOptions) => (
-                  <button className="button" onClick={() => handleAnswerOptionClick(answerOptions.isCorrect)}>{answerOptions.answerText}</button>
+                {questions[currentQuestion].answerOptions.map((answerOptions, index) => (
+                  <button key={index} className="button" onClick={() => handleAnswerOptionClick(answerOptions.isCorrect)}>{answerOptions.answerText}</button>
                 ))}
               </div>
             </div>
           </>
         )}
-
-    </div>
+  </div>
 }

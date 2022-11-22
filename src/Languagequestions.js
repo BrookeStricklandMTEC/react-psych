@@ -1,9 +1,10 @@
-import React from 'react'; 
+import React, { useState } from 'react'; 
 import { Link } from 'react-router-dom';
 import './App.css';
 import Questions from './Questions'
 
-const Languagequestions = [
+export default function Languagequestions(){ 
+  const Languagequestions = [
     {
       questionText: 'Which of the following languages has no alphabet?',
       answerOptions: [
@@ -140,9 +141,24 @@ const Languagequestions = [
       ]
     }
   ]
+  let questions = [...Languagequestions];
+    
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [showScore, setShowScore] = useState(false);
+  const [score, setScore] = useState(0);
 
-export default function Languagequestions(){ 
-    return <>
-        <Questions showScore = {showScore} score = {score} currentQuestion = {currentQuestion} Restart = {Restart} Quit = {Quit} questions = {questions} handleAnswerOptionClick = {handleAnswerOptionClick}/>
-    </>
+  const handleAnswerOptionClick = (isCorrect) => {
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+    const nextQuestion = currentQuestion + 1;
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion);
+    } else {
+      setShowScore(true);
+    }
+  };
+  return (
+    <Questions showScore = {showScore} score = {score} currentQuestion = {currentQuestion} questions = {questions} handleAnswerOptionClick = {handleAnswerOptionClick}></Questions>
+)
 }
