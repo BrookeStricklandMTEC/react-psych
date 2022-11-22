@@ -12,6 +12,7 @@ import Sciencequestions from './Sciencequestions';
 import Historyquestions from './Historyquestions';
 import Languagequestions from './Languagequestions';
 import Culturequestions from './Culturequestions';
+import Results from './Results';
 
 
 export default function App() {
@@ -25,9 +26,9 @@ export default function App() {
           <Route path='/Historyquestions' element={<Historyquestions> </Historyquestions>}> </Route>
           <Route path='/Languagequestions' element={<Languagequestions> </Languagequestions>}> </Route>
           <Route path='/Culturequestions' element={<Culturequestions> </Culturequestions>}> </Route> 
+          <Route path='/Results' element={<Results> </Results>}> </Route>
           <Route path='/' element={<Restart></Restart>}> </Route> 
           <Route path='/' element={<div className='start-game-div'> <Start> </Start> </div>}> </Route> 
-          {/* Route to View Results */}
         </Routes>
       </Router>
     </>

@@ -8,7 +8,7 @@ export default function Start(){
         <div className='start-title'>
             <h1> PSYCH!</h1>
         </div>
-        <Link id="start" className="button" to={'/category'}> Start Game </Link> 
+        <Link id="start" className="button" to={'/category'} > Start Game </Link> 
     </>
     
    
