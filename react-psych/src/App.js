@@ -37,7 +37,6 @@ export default function App() {
           <Route path='/' element={<div className='start-game-div'> <Start> </Start> </div>}> </Route> 
         </Routes>
       </Router>
-
     </>
   );
 }

@@ -2,6 +2,8 @@ import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 import {ResultsContext} from './App.js'; 
+import Quit from './Quit';
+import Restart from './Restart';
 
 
 // const results = useContext(ResultsContext)
@@ -14,6 +16,9 @@ export default function Results () {
            <p> results displayed here </p>
         </div>
     </div>  
+        <div className='align-button'>
+        <Quit></Quit>
+        </div>
     </>
 }
 

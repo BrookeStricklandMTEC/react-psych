@@ -116,9 +116,7 @@ body {
 .button svg {
   margin-right: 5px;
 }
-
 /*  End Page */
-
 #restart{
   width: 100px;
   padding-left: 100px;
@@ -143,6 +141,10 @@ body {
   margin: 20px;
   padding: 20px;
   box-shadow: 10px 10px 42px 0px rgba(#580b77);
+}
+.align-button{
+  display: flex;
+  justify-content: center;
 }
 .scrollable{
   overflow-y: scroll;
