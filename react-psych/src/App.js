@@ -14,8 +14,15 @@ import Languagequestions from './Languagequestions';
 import Culturequestions from './Culturequestions';
 import Results from './Results';
 
+export const ResultsContext = React.createContext()
 
 export default function App() {
+  // [Results] = useState(true)
+
+  // function settingResults(){
+  //   setResults()
+  // }
+
   return (
     <>
       <Router> 
@@ -25,16 +32,16 @@ export default function App() {
           <Route path='/Sciencequestions'element={<Sciencequestions></Sciencequestions>}> </Route>
           <Route path='/Historyquestions' element={<Historyquestions> </Historyquestions>}> </Route>
           <Route path='/Languagequestions' element={<Languagequestions> </Languagequestions>}> </Route>
-          <Route path='/Culturequestions' element={<Culturequestions> </Culturequestions>}> </Route> 
+          <Route path='/Culturequestions' element={<Culturequestions> </Culturequestions>} > </Route> 
           <Route path='/Results' element={<Results> </Results>}> </Route>
-          <Route path='/' element={<Restart></Restart>}> </Route> 
           <Route path='/' element={<div className='start-game-div'> <Start> </Start> </div>}> </Route> 
         </Routes>
       </Router>
+
     </>
   );
 }
 
-
+// onClick={ResultsContext}
 
 

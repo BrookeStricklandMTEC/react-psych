@@ -1,4 +1,5 @@
 import React from 'react'; 
+import { Link } from 'react-router-dom';
 import './App.css';
 import Restart from './Restart';
 import Quit from './Quit';
@@ -10,7 +11,7 @@ return <div className='app'>
     {showScore ? (
         <div className='score-section'>
             You scored {score} out of {questions.length}
-               <Results></Results>
+            <Link id="results" className="button" to={'/Results'}> View Results </Link>
                <Restart> </Restart>
                <Quit> </Quit>
         </div>

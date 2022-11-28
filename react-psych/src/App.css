@@ -14,6 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  overflow-y: auto;
 }
 /* Start game screen */
 .start-title{
@@ -133,7 +134,6 @@ body {
   margin-bottom: 15px;
   width: 200px;
 }
-
 .results-content{
   background-color: #8a00c2;
   width: 550px;
@@ -144,7 +144,16 @@ body {
   padding: 20px;
   box-shadow: 10px 10px 42px 0px rgba(#580b77);
 }
-
+.scrollable{
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+	display: none;
+}
+.correct{
+  background-color: #07da63;
+}
 /*  */
 
 
@@ -261,12 +270,7 @@ body {
     border: 5px solid #234668;
     cursor: pointer;
   }
-  .correct {
-    background-color: #07da63;
-  }
-  .incorrect {
-    background-color: #ff3333;
-  }
+
   .button:hover {
     background-color: #555e7d;
     transition: .1s;
@@ -276,5 +280,22 @@ body {
   }
   .button svg {
     margin-right: 5px;
+  }
+  .results-content{
+    background-color: #8a00c2;
+    width: 300px;
+    min-height: 400px;
+    height: min-content;
+    border-radius: 15px;
+    margin-top: 120px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(#580b77);
+  }
+  .scrollable{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar{
+    display: none;
   }
 }
