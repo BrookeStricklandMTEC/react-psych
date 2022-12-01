@@ -1,15 +1,15 @@
-This is just for extra organization, and in case you'd like me me to present half of the code
+This is just for extra organization, and to be prepared in case i need to present half of the code
 
 Requirements:
 
 You need to demo your final project application on the final day of React class. You will be given 10 minutes to demo your application on the last day of React.
-
 
 What to present:
 
 Project Overview - the goal of the app and demo the app
 
 Explanation and walkthrough of the source code you worked on
+
 
 What was your biggest coding huddle?
 styling brainstorm
@@ -19,11 +19,6 @@ the results screen
 
 Your experience with React on whether or not you like it
 
+
 If you had the choice to start the project all over, what would you do differently?
 create an api for the questions
-
-
-Additional Requirements
-Plan accordingly so that you have time to debug your app
-Commit to GitHub repository (at least 3+ commits)
-Provide GitHub repository link here - do not upload zip file
