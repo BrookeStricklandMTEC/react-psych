@@ -184,7 +184,6 @@ export const Sciencequestions = [
   }
 ]
 
-
 export default function SciencequestionsComponent (){ 
 
       let questions = [...Sciencequestions];

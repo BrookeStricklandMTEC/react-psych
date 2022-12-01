@@ -11,7 +11,7 @@ import { Culturequestions } from './Culturequestions';
 export default function Results () { 
 
 const {selectedCategory} = useContext(ResultsContext);
-// const results = selectedCategory.map([selectedCategory (questionText, answerOptions)]); 
+ 
 const questions = useMemo(() => {
     if (selectedCategory === 'Science') {
         return Sciencequestions
@@ -28,20 +28,27 @@ const questions = useMemo(() => {
 }, [selectedCategory]);
 
 return <>
+    <div className='results-top-center'> 
+        <div className='results-title'>
+            <h1> PSYCH!</h1>
+        </div>
+        <div className='selected-category'> {selectedCategory} </div>
+    </div>
     <div className='scrollable'>
         <div className='results-content'>
            {
             questions.map(questionitem => {
-                return (
+                return <>
+
                     <div className='results-display'>
                          <div className='results-question'> {questionitem.questionText} </div> 
                          {questionitem.answerOptions.map(answerOptionItem => {
                             return (
-                                <div className={`results-answer ${answerOptionItem.isCorrect ? 'correct': ''}`}> {answerOptionItem.answerText} </div>
+                                <li className={`results-answer ${answerOptionItem.isCorrect ? 'correct': ''}`}> {answerOptionItem.answerText} </li>
                             )
                          })}
                     </div>
-                )
+                </>
             })
 
            }

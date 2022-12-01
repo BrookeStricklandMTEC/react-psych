@@ -153,10 +153,28 @@ body {
 ::-webkit-scrollbar{
 	display: none;
 }
-
-
-
-
+.results-top-center{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 220px;
+}
+.results-title{
+  font-size: 30px;
+}
+.results-display{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #580b77;
+  border-width: 5px;
+  padding: 10px;
+}
+.selected-category{
+  font-size: 30px;
+  margin-left: 35px;
+}
 
 .correct{
   color: #07da63;
