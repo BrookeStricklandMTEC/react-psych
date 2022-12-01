@@ -25,11 +25,11 @@ export default function App() {
         <Routes>
           <Route path='/' element={<div className='start-game-div'> <Start> </Start></div>}> </Route>
           <Route path='/category' element={<div className='category-div'> <CategorySelect> </CategorySelect> </div>}> </Route>
-          <Route path='/Sciencequestions'element={<Sciencequestions></Sciencequestions>} > </Route>
+          <Route path='/Sciencequestions'element={<Sciencequestions> </Sciencequestions>} > </Route>
           <Route path='/Historyquestions' element={<Historyquestions> </Historyquestions>}> </Route>
           <Route path='/Languagequestions' element={<Languagequestions> </Languagequestions>}> </Route>
           <Route path='/Culturequestions' element={<Culturequestions> </Culturequestions>} > </Route> 
-          <Route path='/Results' element={<Results> </Results> }> </Route>
+          <Route path='/Results' element={<Results selectedCategory = {selectedCategory}> </Results> }> </Route>
           <Route path='/' element={<div className='start-game-div'> <Start> </Start> </div>}> </Route> 
         </Routes>
       </Router>

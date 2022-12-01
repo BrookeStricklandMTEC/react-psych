@@ -11,7 +11,7 @@ return <div className='app'>
     {showScore ? (
         <div className='score-section'>
             You scored {score} out of {questions.length}
-            <Link id="results" className="button" to={'/Results'}> View Results </Link>
+            <Link id="results" className="button" to={'/Results'} > View Results </Link>
                <Restart> </Restart>
                <Quit> </Quit>
         </div>
