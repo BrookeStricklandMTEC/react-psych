@@ -15,10 +15,15 @@ What was your biggest coding huddle?
 styling brainstorm
 
 What was your biggest coding accomplishment?
-the results screen
+the results screen, major win
 
 Your experience with React on whether or not you like it
 
+pros
+organized, seperate components, ez to reuse code
+
+cons
+dont like it, annoying and hardly feels like a javascript library tool  
 
 If you had the choice to start the project all over, what would you do differently?
-create an api for the questions
+create an api for the questions and pull from API 
